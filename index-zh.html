@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PlateCart – 食譜、超市格價與購物清單（澳洲）</title>
+<meta name="description" content="PlateCart 把食譜變成購物清單，並比較 Coles、Woolworths、ALDI 的價錢，包括每週半價特價。">
+<link rel="stylesheet" href="style.css">
+<link rel="alternate" hreflang="en" href="index.html">
+</head>
+<body>
+<main>
+<p class="lang"><a href="index.html" hreflang="en">English</a></p>
+
+<section class="hero">
+<h1>PlateCart</h1>
+<p class="lead">選一道食譜、建立一張購物清單，一眼看到材料在 Coles、Woolworths、ALDI 哪一間最便宜。</p>
+<p><a class="btn" href="#beta">申請試用</a><a class="btn alt" href="#features">功能介紹</a></p>
+</section>
+
+<h2 id="features">PlateCart 的功能</h2>
+<ul class="features">
+<li><strong>附價錢的食譜</strong>澳洲、亞洲、地中海、墨西哥、印度及西式的家常菜。每道食譜都列出材料，以及三大超市的價錢。</li>
+<li><strong>Coles · Woolworths · ALDI</strong>並排比較單位價錢，查看本週半價特價，並顯示每個價錢的更新時間。</li>
+<li><strong>一張購物清單</strong>可加入整道食譜或單一項目，按超市與貨架分類，逛超市時逐項剔選。</li>
+<li><strong>其他超市的同款貨品</strong>跨超市配對貨品（有條碼時以條碼為準），包裝大小不同時會清楚標明。</li>
+<li><strong>用連結匯入食譜</strong>貼上 Instagram 或 Facebook 食譜連結即可匯入，匯入的食譜只有你自己看得到。</li>
+<li><strong>烹飪小幫手</strong>分步驟說明與計時器、營養資料，以及材料替換。</li>
+<li><strong>10 種語言</strong>英文、繁體中文、簡體中文、西班牙文、法文、葡萄牙文、日文、韓文、印地文及阿拉伯文。</li>
+<li><strong>重視私隱</strong>位置只存在你自己的帳戶；匿名使用統計可自行關閉；可在 app 內刪除帳戶。</li>
+</ul>
+
+<h2>截圖</h2>
+<div class="shots" id="shots">
+<figure><img src="img/home.png" alt="PlateCart 首頁" loading="lazy"><figcaption>食譜</figcaption></figure>
+<figure><img src="img/compare.png" alt="Coles、Woolworths、ALDI 價錢比較" loading="lazy"><figcaption>價錢比較</figcaption></figure>
+<figure><img src="img/list.png" alt="按超市分類的購物清單" loading="lazy"><figcaption>購物清單</figcaption></figure>
+<figure><img src="img/specials.png" alt="本週半價特價" loading="lazy"><figcaption>半價特價</figcaption></figure>
+</div>
+
+<h2 id="beta">取得 App</h2>
+<p>PlateCart 目前在澳洲進行 Android 封閉測試。如要申請，請電郵至 <a href="mailto:platecartau@gmail.com?subject=PlateCart%20beta%20access">platecartau@gmail.com</a>，主旨寫「PlateCart beta access」，並告知你使用的手機型號。</p>
+
+<h2>聯盟連結</h2>
+<p>PlateCart 內部分連結（例如「在 Amazon 找」）是 Amazon 聯盟連結，在 app 內標示為「聯盟連結」。經此購買，我們可能賺取佣金，你無需額外付款。聯盟連結不會影響超市價錢或比較的排序。</p>
+<p><strong>作為 Amazon 聯盟會員，我們會從符合資格的購買中賺取佣金。</strong><br>
+<span class="meta">As an Amazon Associate I earn from qualifying purchases.</span></p>
+
+<footer>
+<p><a href="privacy-zh.html">私隱政策</a> · <a href="terms-zh.html">使用條款</a> · <a href="mailto:platecartau@gmail.com">聯絡我們</a></p>
+<p>價錢來自公開的商店資料，可能隨時改變；購買前請先在店內或網上確認價錢。PlateCart 是獨立的應用程式，與 Coles、Woolworths、ALDI、Amazon 沒有附屬、認可或贊助關係。所有商標屬各自擁有人。</p>
+</footer>
+</main>
+<script>
+(function () {
+  var box = document.getElementById("shots");
+  var imgs = box.querySelectorAll("img");
+  imgs.forEach(function (img) {
+    img.addEventListener("error", function () { img.closest("figure").remove(); });
+    img.addEventListener("load", function () { box.classList.add("has"); });
+  });
+})();
+</script>
+</body>
+</html>

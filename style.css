@@ -14,3 +14,23 @@ a { color: var(--accent); }
 nav { display: flex; gap: 16px; flex-wrap: wrap; font-size: 14px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
 table { border-collapse: collapse; width: 100%; font-size: 14px; }
 th, td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; }
+
+h3{font-size:1rem;margin:1.2em 0 .4em}
+
+/* ── 公開介紹頁 ── */
+.hero { padding: 24px 0 8px; }
+.hero h1 { font-size: 32px; }
+.hero .lead { font-size: 18px; color: var(--fg); margin: 8px 0 16px; }
+.btn { display: inline-block; background: var(--accent); color: #fff; padding: 10px 18px; border-radius: 999px; text-decoration: none; font-weight: 600; }
+.btn.alt { background: transparent; color: var(--accent); border: 1px solid var(--accent); margin-left: 8px; }
+.lang { float: right; font-size: 14px; }
+.features { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.features li { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin: 0; }
+.features strong { display: block; margin-bottom: 2px; }
+.shots { display: none; gap: 12px; overflow-x: auto; padding-bottom: 8px; }
+.shots.has { display: flex; }
+.shots figure { margin: 0; flex: 0 0 auto; }
+.shots img { height: 420px; width: auto; border-radius: 12px; border: 1px solid var(--line); display: block; }
+.shots figcaption { font-size: 13px; color: var(--sub); text-align: center; }
+footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--sub); font-size: 14px; }
+footer p { margin: 6px 0; }

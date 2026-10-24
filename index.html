@@ -1,20 +1,64 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PlateCart</title>
+<title>PlateCart – recipes, grocery price comparison and shopping list for Australia</title>
+<meta name="description" content="PlateCart turns recipes into a shopping list and compares Coles, Woolworths and ALDI prices, including this week's half-price specials.">
 <link rel="stylesheet" href="style.css">
+<link rel="alternate" hreflang="zh-Hant" href="index-zh.html">
 </head>
 <body>
 <main>
+<p class="lang"><a href="index-zh.html" hreflang="zh-Hant">繁體中文</a></p>
+
+<section class="hero">
 <h1>PlateCart</h1>
-<p class="meta">Recipes · Coles / Woolworths / ALDI prices · Shopping list</p>
-<h2>繁體中文</h2>
-<ul><li><a href="privacy-zh.html">私隱政策</a></li><li><a href="terms-zh.html">使用條款</a></li></ul>
-<h2>English</h2>
-<ul><li><a href="privacy-en.html">Privacy Policy</a></li><li><a href="terms-en.html">Terms of Use</a></li></ul>
-<p class="meta">Contact: <a href="mailto:platecartau@gmail.com">platecartau@gmail.com</a></p>
+<p class="lead">Pick a recipe, build one shopping list, and see where the ingredients are cheapest at Coles, Woolworths and ALDI.</p>
+<p><a class="btn" href="#beta">Request beta access</a><a class="btn alt" href="#features">What it does</a></p>
+</section>
+
+<h2 id="features">What PlateCart does</h2>
+<ul class="features">
+<li><strong>Recipes with prices</strong>Home-cooked favourites from Australian, Asian, Mediterranean, Mexican, Indian and Western kitchens. Every recipe lists its ingredients with prices from the three big supermarkets.</li>
+<li><strong>Coles · Woolworths · ALDI</strong>Compare unit prices side by side, see this week's half-price specials, and see when each price was last updated.</li>
+<li><strong>One shopping list</strong>Add a whole recipe or single items. Items are grouped by store and aisle, and you can tick them off in the shop.</li>
+<li><strong>Same product, other store</strong>The app matches products across stores (by barcode when available) and tells you when pack sizes differ.</li>
+<li><strong>Import recipes from links</strong>Paste an Instagram or Facebook recipe link. The imported recipe is private to your account.</li>
+<li><strong>Cooking helpers</strong>Step-by-step instructions with timers, nutrition information, and ingredient swaps.</li>
+<li><strong>10 languages</strong>English, Traditional and Simplified Chinese, Spanish, French, Portuguese, Japanese, Korean, Hindi and Arabic.</li>
+<li><strong>Privacy first</strong>Your location stays in your own account. Anonymous usage statistics are optional. You can delete your account in the app.</li>
+</ul>
+
+<h2>Screenshots</h2>
+<div class="shots" id="shots">
+<figure><img src="img/home.png" alt="PlateCart home screen" loading="lazy"><figcaption>Recipes</figcaption></figure>
+<figure><img src="img/compare.png" alt="Price comparison across Coles, Woolworths and ALDI" loading="lazy"><figcaption>Compare prices</figcaption></figure>
+<figure><img src="img/list.png" alt="Shopping list grouped by store" loading="lazy"><figcaption>Shopping list</figcaption></figure>
+<figure><img src="img/specials.png" alt="This week's half-price specials" loading="lazy"><figcaption>Half-price specials</figcaption></figure>
+</div>
+
+<h2 id="beta">Get the app</h2>
+<p>PlateCart is in a closed beta for Android in Australia. To request access, email <a href="mailto:platecartau@gmail.com?subject=PlateCart%20beta%20access">platecartau@gmail.com</a> with the subject “PlateCart beta access” and tell us which phone you use.</p>
+
+<h2>Affiliate links</h2>
+<p>Some links in PlateCart (for example “Find on Amazon”) are Amazon affiliate links and are marked “Affiliate link” in the app. If you buy through them we may earn a commission, at no extra cost to you. Affiliate links never change the supermarket prices or the order of the comparison.</p>
+<p><strong>As an Amazon Associate I earn from qualifying purchases.</strong></p>
+
+<footer>
+<p><a href="privacy-en.html">Privacy Policy</a> · <a href="terms-en.html">Terms of Use</a> · <a href="mailto:platecartau@gmail.com">Contact</a></p>
+<p>Prices are collected from public store listings and may change; always check the price in store or online before you buy. PlateCart is an independent app and is not affiliated with, endorsed by or sponsored by Coles, Woolworths, ALDI or Amazon. All trademarks belong to their owners.</p>
+</footer>
 </main>
+<script>
+(function () {
+  var box = document.getElementById("shots");
+  var imgs = box.querySelectorAll("img");
+  imgs.forEach(function (img) {
+    img.addEventListener("error", function () { img.closest("figure").remove(); });
+    img.addEventListener("load", function () { box.classList.add("has"); });
+  });
+})();
+</script>
 </body>
 </html>
